@@ -1,0 +1,16 @@
+// faça um algoritmo que leia um valor e escreva: 0, se o valor é zero; 1, e o valor é maior que zero; -1 - se o valor é negativo
+
+let valor = parseInt(prompt());
+
+if(valor>0) {
+    console.log("1");
+} else if (valor<0) {
+    console.log("-1");
+} else {
+    console.log("0");
+}
+
+
+// faça um algoritmo que leia um valor e escreva: 0, se o valor é par; 1, se o valor é ímpar
+
+let valor1 = 
