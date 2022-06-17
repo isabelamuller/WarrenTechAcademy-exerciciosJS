@@ -81,8 +81,19 @@ let nota2Reais = valor6/2;
 valor6 = valor6%2;
 let notaUmReal = valor6;
 
-console.log("o valor pode ser decomposto em " + parseInt(nota100) + " nota(s) de 100, " + parseInt(nota50) + " nota(s) de 50, " + parseInt(nota20) + " nota(s) de 20, "  + parseInt(nota10) + " nota(s) de 10, "   + parseInt(nota5) + " nota(s) de 5, "   + parseInt(nota2Reais) + " nota(s) de 2 e "  + parseInt(notaUmReal) + " nota(s) de 1, ");
+console.log("o valor pode ser decomposto em " + parseInt(nota100) + " nota(s) de 100, " + parseInt(nota50) + " nota(s) de 50, " + parseInt(nota20) + " nota(s) de 20, "  + parseInt(nota10) + " nota(s) de 10, "   + parseInt(nota5) + " nota(s) de 5, "   + parseInt(nota2Reais) + " nota(s) de 2 e "  + parseInt(notaUmReal) + " nota(s) de 1.");
 
 
 // faça um programa que lê uma quantia inteira em segundos e escreva o número de horas, minutos e segundos correspondente
+
+let segundos = parseInt(prompt("escreva os segundos"));
+let horas = segundos/3600;
+segundos = segundos%3600;
+let minutos = segundos/60;
+segundos = segundos&60;
+
+console.log(parseInt(horas) + " hora(s), " + parseInt(minutos) + " minuto(s) e " + parseInt(segundos) + " segundo(s).");
+
+
+// faça um programa que leia 4 valores , hora inicial, minuto inicial, hora final e minuto final. Representando respectivamente a hora e minuto inicial e final de um evento, e calcule a duração do mesmo em horas e minutos. considere que o evento inicia e termina no mesmo dia
 
