@@ -1,0 +1,88 @@
+// faça um programa que leia 3 valores reais, notas de um aluno e escreva sua média aritmética
+
+let nota1 = parseInt(prompt("adicione a primeira nota"));
+let nota2 = parseInt(prompt("adicione a segunda nota"));
+let nota3 = parseInt(prompt("adicione a terceira nota"));
+
+let media = (nota1 + nota2 + nota3) / 3;
+
+console.log(media);
+
+
+// faça um programa que leia 2 valores reais v1 e v2 e calcule e escreva a área do triângulo
+
+let v1 = parseInt(prompt("adicione a base do triangulo"));
+let v2 = parseInt(prompt("adicione a altura do triangulo"));
+
+let area = (v1 * v2) / 2;
+
+console.log(area);
+
+
+// faça um programa que leia 3 valores a, b e c, coeficientes de uma equação de segundo grau, e calcule e escreva as raízes da equação
+
+let a = parseInt(prompt());
+let b = parseInt(prompt());
+let c = parseInt(prompt());
+let calculoAdicao;
+let calculoSub;
+
+let delta = Math.sqrt(Math.pow(b,2) - (4 * a * c));
+if(delta>=0) {
+    calculoAdicao = (-b + delta) / (2*a);
+    calculoSub = (-b - delta) / (2*a);
+    console.log("raiz 1: " + calculoAdicao + " | raiz 2: " + calculoSub);
+} else {
+    console.log("o delta é negativo");
+}
+
+// faça um programa que leia 2 valores e escreva o maior deles
+
+let x = parseInt(prompt());
+let y = parseInt(prompt());
+
+if (x>y) {
+    console.log("o primeiro valor é maior");
+} else if (y>x) {
+    console.log("o segundo valor é maior");
+} else {
+    console.log("os valores sao iguais");
+}
+
+
+// faça um programa que leia 2 valores e escreva o menor deles
+
+let valor4 = parseInt(prompt());
+let valor5 = parseInt(prompt());
+
+if (valor4<valor5) {
+    console.log("o menor valor é: " + valor4);
+} else if (valor5<valor4) {
+    console.log("o menor valor é: " + valor5);
+} else {
+    console.log("os valores sao iguais");
+}
+
+
+// faça um programa que lê um valor inteiro em reais e calcula e escreve qual o menor número possível de notas de 100,50,20,10,5,2 e 1 real em que o valor pode ser decomposto
+
+let valor6 = parseInt(prompt());
+let nota100 = valor6/100;
+valor6 = valor6%100;
+let nota50 = valor6/50;
+valor6 = valor6%50;
+let nota20 = valor6/20;
+valor6 = valor6%20;
+let nota10 = valor6/10;
+valor6 = valor6%10;
+let nota5 = valor6/5;
+valor6 = valor6%5;
+let nota2Reais = valor6/2;
+valor6 = valor6%2;
+let notaUmReal = valor6;
+
+console.log("o valor pode ser decomposto em " + parseInt(nota100) + " nota(s) de 100, " + parseInt(nota50) + " nota(s) de 50, " + parseInt(nota20) + " nota(s) de 20, "  + parseInt(nota10) + " nota(s) de 10, "   + parseInt(nota5) + " nota(s) de 5, "   + parseInt(nota2Reais) + " nota(s) de 2 e "  + parseInt(notaUmReal) + " nota(s) de 1, ");
+
+
+// faça um programa que lê uma quantia inteira em segundos e escreva o número de horas, minutos e segundos correspondente
+
