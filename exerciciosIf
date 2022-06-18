@@ -58,26 +58,44 @@ let c1 = parseInt(prompt());
 let aux1;
 let aux2;
 
-if (a1>b1 && b1>c1) { // a, b, c
-    console.log(a1 + ", " + b1 + ", " + c1);
-} else if (a1>b1 && c1>b1) {  // a, c, b
+if (a1>b1 && b1>c1) { // a, b, c 
+    aux1 = a1;
+    a1 = c1;
+    c1 = aux1;
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
+} else if (a1>c1 && c1>b1) {  // a, c, b 
+    aux1 = a1;
+    a1 = b1;
+    b1 = aux1;
+    aux2 = c1;
+    c1 = b1;
+    b1 = aux2;
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
+} else if (b1>a1 && a1>c1) {  // b, a, c
     aux1 = c1;
     c1 = b1;
     b1 = aux1;
-    console.log(a1 + ", " + b1 + ", " + c1);
-} else if (b1>a1 && a1>c1) {  // b, a, c
-    aux1 = b1;
+    aux2 = b1;
+    b1 = a1;
+    a1 = aux2;
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
+} else if (b1>c1 && c1>a1) {   // b, c, a
+    aux1 = b1; // aux tem b
+    b1 = c1; // b pegou o valor de c
+    c1 = aux1; // a agora tem b
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
+} else if (c1>a1 && a1>b1) {    // c, a, b
+    aux1 = a1;
+    a1 = b1;
+    b1 = aux1;
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
+} else if (c1>b1 && b1>a1) { // c, b, a
+    aux1= b1;
     b1 = a1;
     a1 = aux1;
-    console.log(a1 + ", " + b1 + ", " + c1);
-} else if (b1>a1 && c1>a1) {   // b, c, a
-    aux1 = b1;
-    b1 = a1; 
-    aux2 = a1;
-    a1 = c1
-    console.log(a1 + ", " + b1 + ", " + c1);
-} else if (c1>a1 && a1>b1) {    // c, a, b
-    console.log(a1 + ", " + b1 + ", " + c1);
-} else if (c1>a1 && b1>a1) {    // c, b, a
-    console.log(a1 + ", " + b1 + ", " + c1);
+    console.log(a1 + ", " + b1 + ", " + c1); // CERTO
 }
+
+
+// faça um algoritmo que leia 3 valores v1, v2 e v3 e coloque-os em ordem decrescente
+
