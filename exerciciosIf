@@ -13,4 +13,71 @@ if(valor>0) {
 
 // faça um algoritmo que leia um valor e escreva: 0, se o valor é par; 1, se o valor é ímpar
 
-let valor1 = 
+let valor1 = parseInt(prompt());
+
+if (valor1%2==0) {
+    console.log("0");
+} else {
+    console.log("1");
+}
+
+
+// faça um algoritmo que leia dois valores e, através de uma comparação, escreva o maior deles. considere que os dois valores são diferentes
+
+let x = parseInt(prompt());
+let y = parseInt(prompt());
+
+if (x>y) {
+    console.log("o primeiro valor é maior");
+} else {
+    console.log("o segundo valor é maior");
+} 
+
+
+// faça um algoritmo que leia dois valores e escreva os dois em ordem crescente
+
+let a = parseInt(prompt());
+let b = parseInt(prompt());
+let aux;
+
+if (a>b) {
+    aux = a;
+    a = b;
+    b = aux;
+    console.log(a,b);
+} else {
+    console.log(a,b);
+}
+
+
+// faça um algoritmo que leia 3 valores v1, v2 e v3, e escreva-os em ordem crescente
+
+let a1 = parseInt(prompt());
+let b1 = parseInt(prompt());
+let c1 = parseInt(prompt());
+let aux1;
+let aux2;
+
+if (a1>b1 && b1>c1) { // a, b, c
+    console.log(a1 + ", " + b1 + ", " + c1);
+} else if (a1>b1 && c1>b1) {  // a, c, b
+    aux1 = c1;
+    c1 = b1;
+    b1 = aux1;
+    console.log(a1 + ", " + b1 + ", " + c1);
+} else if (b1>a1 && a1>c1) {  // b, a, c
+    aux1 = b1;
+    b1 = a1;
+    a1 = aux1;
+    console.log(a1 + ", " + b1 + ", " + c1);
+} else if (b1>a1 && c1>a1) {   // b, c, a
+    aux1 = b1;
+    b1 = a1; 
+    aux2 = a1;
+    a1 = c1
+    console.log(a1 + ", " + b1 + ", " + c1);
+} else if (c1>a1 && a1>b1) {    // c, a, b
+    console.log(a1 + ", " + b1 + ", " + c1);
+} else if (c1>a1 && b1>a1) {    // c, b, a
+    console.log(a1 + ", " + b1 + ", " + c1);
+}
