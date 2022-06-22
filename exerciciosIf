@@ -136,3 +136,37 @@ if (a2<b2 && b2<c2) {
 } else if (c2<b2 && b2<a2) { 
     console.log(a2 + ", " + b2 + ", " + c2); // CERTO
 }
+
+
+// faça um algoritmo que retorne a soma dos numeros de um inteiro entre 0 e 9999
+
+let valor7 = parseInt(prompt("insira um valor entre 0 e 9999"));
+let numero1;
+let numero2;
+let numero3;
+let numero4;
+let soma;
+
+if(valor7>=0 && valor7<=99) {
+    numero1 = valor7%10;
+    numero2 = valor7/10;
+    soma = parseInt(numero1) + parseInt(numero2);
+    console.log("a soma dos digitos do numero é: " + soma);
+} else if (valor7>=100 && valor7 <= 999) {
+    numero1 = valor7%10;
+  valor7 = valor7/10; 
+  numero2 = valor7%10; 
+    numero3 = valor7/10; 
+    soma = parseInt(numero1) + parseInt(numero2) + parseInt(numero3);
+    console.log("a soma dos digitos do numero é: " + soma);
+} else if (valor7>=1000 && valor7<=9999) {
+    numero1 = valor7%10;
+    valor7 = valor7/10; 
+  numero2 = valor7%10; 
+    valor7 = valor7/10; 
+  numero3 = valor7%10; 
+    numero4 = valor7/10; 
+    soma = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4);
+    console.log("a soma dos digitos do numero é: " + soma);
+}
+
